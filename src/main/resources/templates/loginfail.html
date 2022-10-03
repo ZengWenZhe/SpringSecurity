@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录失败</title>
+
+    <link rel="shortcut icon" href="/static/img/bitbug_favicon.ico">
+</head>
+
+<style>
+    section {
+        position: relative;
+        min-height: 100vh;
+        background: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    section .container {
+        position: relative;
+        width: 800px;
+        height: 500px;
+        background-image: url("/static/img/中转.jpg");
+        background-size: 800px 500px;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+
+    }
+    .na{
+        margin-top: 150px;
+        margin-left: 350px;
+    }
+    .la{
+        margin-top: 80px;
+        margin-left: 365px;
+    }
+    .ad{
+        text-decoration: none;
+        color: #0f0f0f;
+    }
+</style>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="na">
+                <h1>登录失败</h1>
+            </div>
+
+            <div class="la">
+                <a class="ad" th:href="@{/turnregister}">前往注册</a>   <!--change-->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
